@@ -11132,44 +11132,19 @@ select {
 }
 
 /** - Start  Curser Pointer CSS */
-.cursor {
-  position: fixed;
-  width: 40px;
-  height: 40px;
-  margin-left: -20px;
-  margin-top: -20px;
-  border-radius: 50%;
-  border: 2px solid #443935;
-  transition: 0.3s;
-  transform: translate(-50%, -50%);
-  pointer-events: none;
-  z-index: 1000;
-}
-
+/** - Disable Custom Cursor & Restore Normal Pointer */
+/** - Disable Custom Cursor Rings */
+.cursor,
 .cursor2 {
-  position: fixed;
-  width: 4px;
-  height: 4px;
-  margin-left: -20px;
-  margin-top: -20px;
-  border-radius: 50%;
-  background-color: #e2791d;
-  transform: translate(-50%, -50%);
-  transition: 0.1s;
-  pointer-events: none;
-  z-index: 1000;
+  display: none !important;
 }
 
-.grow,
-.grow-small {
-  transform: scale(3);
-  background: white;
-  mix-blend-mode: difference;
-  border: none;
+html, body {
+  cursor: auto !important;
 }
 
-.grow-small {
-  transform: scale(1.7);
+a, button, input[type="submit"], input[type="button"], .site-button, .site-button-link {
+  cursor: pointer !important;
 }
 
 /** - Home Page 2 Slider */
